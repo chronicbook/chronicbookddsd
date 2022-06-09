@@ -4,14 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>chronicbook</title>
+        <title>@yield('title' ,env('APP_NAME'))</title>
     </head>
     <body class="antialiased">
-            <h1>bonjour tous chronicbook</h1>
-            <p> la date d'aujourdhuit est {{ date ('d/m/y') }}</p>
-
+        @yield('content') 
             <footer>
-                <p>&copy; copyright 2022 &middot;</p>
+                <p>&copy; copyright 2022 &middot; <a href="/apropos"> a propos de nous </a></p>
             </footer>
     </body>
 </html>
