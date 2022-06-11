@@ -1,10 +1,10 @@
-@extends ('defaut')
+@extends ('defaut_admin')
 
 
-@section ('titreauteurs','Accueil')
+@section ('titreadmin','Accueil')
 
 
-@section('blockauteurs')
+@section('blockadmin')
             <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">

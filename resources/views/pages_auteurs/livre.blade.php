@@ -3,52 +3,44 @@
 @section('titreauteurs','publier livre')
 
 @section('blockauteurs')
-                    <div class="col-12">
+<br><br>
+                    <div class="col-sm-12 col-xl-6" style="width: 100%;">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Responsive Table</h6>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Country</th>
-                                            <th scope="col">ZIP</th>
-                                            <th scope="col">Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
-                                            <td>123</td>
-                                            <td>Member</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>mark@email.com</td>
-                                            <td>UK</td>
-                                            <td>456</td>
-                                            <td>Member</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>jacob@email.com</td>
-                                            <td>AU</td>
-                                            <td>789</td>
-                                            <td>Member</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <h6 class="mb-4">Ajouter un livre l</h6>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Titre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingPassword"
+                                    >
+                                <label for="floatingPassword">nom de l'auteur</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingPassword"
+                                    placeholder="categorie">
+                                <label for="floatingPassword">categorie</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="placer votre description ici"
+                                    id="floatingTextarea" style="height: 150px;"></textarea>
+                                <label for="floatingTextarea">introduction/description</label>
+                            </div><br>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingPassword"
+                                    placeholder="prix unitaire">
+                                <label for="floatingPassword">prix unitaire</label>
+                            </div><br>
+                            <div class="form-floating mb-3">
+                                <input type="file" class="form-control" id="floatingPassword"
+                                    placeholder="affiche du livre">
+                                <label for="floatingPassword">affiche du livre</label>
+                            </div><br>
+                            <div class="form-floating mb-3">
+                                <input type="file" class="form-control" id="floatingPassword"
+                                    placeholder="fichier livre">
+                                <label for="floatingPassword">fichier livre</label>
                             </div>
                         </div>
                     </div>
