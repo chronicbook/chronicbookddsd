@@ -9,7 +9,7 @@
     <body class="antialiased">
         @yield('content') 
             <footer>
-                <p>&copy; copyright 2022 &middot; <a href="/apropos"> a propos de nous </a></p>
+                <p>&copy; copyright 2022 &middot; <a href="{{ route('app_about') }}"> a propos de nous </a></p>
             </footer>
     </body>
 </html>
