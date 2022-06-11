@@ -14,10 +14,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Nom</th>
-                                            <th scope="col">Prenom</th>
-                                            <th scope="col">Telephone</th>
-                                            <th scope="col">email</th>
+                                            <th scope="col">Titre</th>
+                                            <th scope="col">Ateur</th>
+                                            <th scope="col">nombre de like</th>
+                                            <th scope="col">nombre de vues</th>
                                             <th scope="col">Modification </th>
                                             <th scope="col">Ajout</th>
                                             <th scope="col">Suppression</th>

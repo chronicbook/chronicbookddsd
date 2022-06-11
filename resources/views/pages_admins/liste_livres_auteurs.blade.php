@@ -8,16 +8,16 @@
 <br>
 <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Tableau des Ateurs</h6>
+                            <h6 class="mb-4">Tableau des livres</h6>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Nom</th>
-                                            <th scope="col">Prenom</th>
-                                            <th scope="col">Telephone</th>
-                                            <th scope="col">email</th>
+                                            <th scope="col">Titre</th>
+                                            <th scope="col">Auteur</th>
+                                            <th scope="col">prix unitaire</th>
+                                            <th scope="col">nombre de like</th>
+                                            <th scope="col">nombre de d'achat</th>
                                             <th scope="col">Modification </th>
                                             <th scope="col">Ajout</th>
                                             <th scope="col">Suppression</th>

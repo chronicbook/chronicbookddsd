@@ -41,3 +41,11 @@ use Illuminate\Support\Facades\Route;
     Route::get('/lister_auteur',function(){
         return view('pages_admins.liste_auteurs');
     })->name('lister_auteurs');
+
+    Route::get('/lister_livre_auteur',function(){
+        return view('pages_admins.liste_livres_auteurs');
+    })->name('lister_livre_auteurs');
+
+    Route::get('/lister_histoires_auteurs',function(){
+        return view('pages_admins.liste_histoire_auteurs');
+    })->name('lister_histoires_auteurs');
