@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
     Route::get('/accueil_auteurs',function(){
         return view('pages_auteurs.index');
     })->name('accueil_auteurs');
+    Route::get('/livre_auteurs',function(){
+        return view('pages_auteurs.livre');
+    })->name('livre_auteurs');
     
