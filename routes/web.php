@@ -9,3 +9,8 @@ use Illuminate\Support\Facades\Route;
     Route::get('/apropos' , function(){
         return view('pages.apropos');
     })->name('app_about');
+
+    Route::get('/accueil_auteurs',function(){
+        return view('pages_auteurs.index');
+    })->name('accueil_auteurs');
+    
