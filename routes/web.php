@@ -6,10 +6,6 @@ use Illuminate\Support\Facades\Route;
         return view('pages.welcome');
     })->name('app_home');
 
-    Route::get('/apropos' , function(){
-        return view('pages.apropos');
-    })->name('app_about');
-
     Route::get('/accueil_auteurs',function(){
         return view('pages_auteurs.index');
     })->name('accueil_auteurs');
@@ -49,3 +45,15 @@ use Illuminate\Support\Facades\Route;
     Route::get('/lister_histoires_auteurs',function(){
         return view('pages_admins.liste_histoire_auteurs');
     })->name('lister_histoires_auteurs');
+
+    Route::get('/inscriptions' , function(){
+        return view('pages.inscription');
+    })->name('inscriptions');
+
+    Route::get('/nos_auteurs', function(){
+        return view('pages.nos_auteurs');
+    })->name('nos_auteurs');
+
+    Route::get('/connexion' , function(){
+        return view('pages.connexion');
+    })->name('connexion');
