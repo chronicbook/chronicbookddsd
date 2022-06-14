@@ -24,16 +24,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
-                                            <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
-                                            <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
-                                            <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
-                                        </tr>
+                                        @foreach($lister_auteur as $lister_auteurs)
+                                            <tr>
+                                                <th scope="row">{{$lister_auteurs->id}}</th>
+                                                <td>{{$lister_auteurs->NOM_AUTEUR}}</td>
+                                                <td>{{$lister_auteurs->PRENOM_AUTEUR}}</td>
+                                                <td>{{$lister_auteurs->TEL_AUTEUR}}</td>
+                                                <td>{{$lister_auteurs->EMAIL_AUTEUR}}</td>
+                                                <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
+                                                <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
+                                                <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

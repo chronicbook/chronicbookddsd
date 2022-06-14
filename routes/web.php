@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\auteurcontrolleur;
 use Illuminate\Support\Facades\Route;
 
     Route::get('/', function(){
@@ -34,9 +35,7 @@ use Illuminate\Support\Facades\Route;
         return view('pages_admins.ajout_auteur');
     })->name('ajout_auteur');
 
-    Route::get('/lister_auteur',function(){
-        return view('pages_admins.liste_auteurs');
-    })->name('lister_auteurs');
+    Route::get('/lister_auteur',[auteurcontrolleur::class,"listeauteur"])->name('lister_auteurs');
 
     Route::get('/lister_livre_auteur',function(){
         return view('pages_admins.liste_livres_auteurs');

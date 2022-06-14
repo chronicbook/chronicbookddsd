@@ -15,7 +15,7 @@ class CreateComentaireTable extends Migration
     {
         Schema::create('comentaire', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("ID_L")->constrained();
+            $table->integer("ID_L");
             $table->integer("ID_H");
             $table->string("EDITEUR");
             $table->string("CONTENU");
@@ -23,7 +23,6 @@ class CreateComentaireTable extends Migration
             $table->time("HEURE")->nullable();
             $table->timestamps();
         });
-        schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -33,9 +32,6 @@ class CreateComentaireTable extends Migration
      */
     public function down()
     {
-        schema::table("comentaire",function (Blueprint $table){
-            $table->dropConstrainedForeignId("ID_L");
-        });
         Schema::dropIfExists('comentaire');
     }
 }
