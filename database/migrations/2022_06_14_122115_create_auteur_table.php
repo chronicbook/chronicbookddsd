@@ -37,7 +37,7 @@ class CreateAuteurTable extends Migration
      */
     public function down()
     {
-        schema::table("etudians",function (Blueprint $table){
+        schema::table("auteur",function (Blueprint $table){
             $table->dropConstrainedForeignId("ADMINS_ID");
         });
         Schema::dropIfExists('auteur');

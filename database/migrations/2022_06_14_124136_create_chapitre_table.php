@@ -19,9 +19,9 @@ class CreateChapitreTable extends Migration
             $table->string("TITRE_C");
             $table->string("INTRO_C");
             $table->string("TEXTE_C");
-            $table->string("NB_V");
-            $table->string("NB_LIKE");
-            $table->string("NUMERO_CHAP");
+            $table->integer("NB_V");
+            $table->integer("NB_LIKE");
+            $table->integer("NUMERO_CHAP");
             $table->timestamps();
         });
 
@@ -35,7 +35,7 @@ class CreateChapitreTable extends Migration
      */
     public function down()
     {
-        schema::table("etudians",function (Blueprint $table){
+        schema::table("chapitre",function (Blueprint $table){
             $table->dropConstrainedForeignId("ADMINS_ID");
         });
         Schema::dropIfExists('chapitre');
