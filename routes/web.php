@@ -31,6 +31,7 @@ use Illuminate\Support\Facades\Route;
     })->name('accueil_admin');
 
     Route::get('/ajout_auteur',[auteurcontrolleur::class,"ajoutauteur"])->name('ajout_auteur');
+    Route::post('/ajout_auteur',[auteurcontrolleur::class,"store"])->name('sotre_auteur');
 
     Route::get('/lister_auteur',[auteurcontrolleur::class,"listeauteur"])->name('lister_auteurs');
 
@@ -49,3 +50,11 @@ use Illuminate\Support\Facades\Route;
     Route::get('/connexion' , function(){
         return view('pages.connexion');
     })->name('connexion');
+
+    Route::get('/commentaires' , function(){
+        return view('pages.commentaire');
+    })->name('commentaires');
+
+    Route::get('/details_histoire' , function(){
+        return view('pages.details_histoire');
+    })->name('details_histoire');

@@ -98,8 +98,8 @@
                                                         <div class="product-fade-control">
                                                             <div class="to-left">
                                                                 <a href=""><i class="fa fa-heart"></i></a>
-                                                                <a href="detail_histoire.html"><i class="fa fa-eye"></i></a>
-                                                                <a href="comment.html"><i class="fa fa-comment"></i></a>
+                                                                <a href="{{route('details_histoire')}}"><i class="fa fa-eye"></i></a>
+                                                                <a href="{{route('commentaires')}}"><i class="fa fa-comment"></i></a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
