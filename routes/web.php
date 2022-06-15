@@ -3,6 +3,7 @@
 use App\Http\Controllers\auteurcontrolleur;
 use App\Http\Controllers\histoircontrolleur;
 use App\Http\Controllers\livrescontrolleur;
+use App\Models\livre;
 use Illuminate\Support\Facades\Route;
 
     Route::get('/', function(){
@@ -17,13 +18,9 @@ use Illuminate\Support\Facades\Route;
         return view('pages_auteurs.livre');
     })->name('livre_auteurs');
 
-    Route::get('/liste_livre_auteurs',function(){
-        return view('pages_auteurs.liste_livres');
-    })->name('liste_livre_auteurs');
+    Route::get('/liste_livre',[livrescontrolleur::class,"listerlivrepourauteurs"])->name('liste_livre');
 
-    Route::get('/liste_histoires_auteurs',function(){
-        return view('pages_auteurs.liste_histoires');
-    })->name('liste_histoires_auteurs');
+    Route::get('/liste_histoires_auteurs',[histoircontrolleur::class,"listehistoirepourlesauteurs"])->name('liste_histoires');
 
     Route::get('/histoire_auteurs',function(){
         return view('pages_auteurs.histoire');

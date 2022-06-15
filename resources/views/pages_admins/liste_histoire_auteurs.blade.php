@@ -24,7 +24,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        $i=0;
                                     @foreach($lister_histoire as $listeh)
                                         <tr>
                                             <th scope="row">$i</th>
@@ -36,7 +35,6 @@
                                             <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
                                             <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
                                         </tr>
-                                        $i++;
                                     @endforeach
                                     </tbody>
                                 </table>

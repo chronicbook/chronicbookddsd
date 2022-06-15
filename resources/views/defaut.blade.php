@@ -69,8 +69,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i> mes publication</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('liste_livre_auteurs') }}" class="dropdown-item">mes livres</a>
-                            <a href="{{ route('liste_histoires_auteurs') }}" class="dropdown-item">mes histoires</a>
+                            <a href="{{ route('liste_livre') }}" class="dropdown-item">mes livres</a>
+                            <a href="{{ route('liste_histoires') }}" class="dropdown-item">mes histoires</a>
                         </div>
                     </div>
                 </div>

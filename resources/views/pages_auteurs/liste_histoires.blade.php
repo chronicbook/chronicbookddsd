@@ -22,16 +22,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($lister_histoire as $collecth)
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
+                                            <th scope="row">{{$collecth->id}}</th>
+                                            <td>{{$collecth->TITRE}}</td>
+                                            <td>{{$collecth->NB_C}}</td>
+                                            <td>{{$collecth->NB_V}}</td>
+                                            <td>{{$collecth->NB_L}}</td>
                                             <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
                                             <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
                                             <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
                                         </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

@@ -12,4 +12,9 @@ class livrescontrolleur extends Controller
         $lister_livres=livre::orderBY("TITRE","asc")->get();
         return view("pages_admins.liste_livres_auteurs",compact("lister_livres"));
     }
+    public function listerlivrepourauteurs (){
+
+        $lister_livres=livre::orderBY("TITRE","asc")->get();
+        return view("pages_auteurs.liste_livres",compact("lister_livres"));
+    }
 }

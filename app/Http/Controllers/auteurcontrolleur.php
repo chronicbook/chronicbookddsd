@@ -13,6 +13,8 @@ class auteurcontrolleur extends Controller
         return view("pages_admins.liste_auteurs" , compact("lister_auteur"));
     }
 
+    
+
     public function ajoutauteur(){
         
         return view("pages_admins.ajout_auteur");
