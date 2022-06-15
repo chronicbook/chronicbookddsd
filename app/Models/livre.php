@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class livre extends Model
 {
     use HasFactory;
-
+    protected $table = 'livre';
     public function livre(){
-        $this->hasOne(auteur::class);
+        return $this->belongsTo(auteur::class);
     }
 }

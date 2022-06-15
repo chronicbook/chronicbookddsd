@@ -9,7 +9,12 @@ class auteurcontrolleur extends Controller
 {
     public function listeauteur(){
         
-        $lister_auteur=auteur::orderBY("id","asc")->get();
-        return view('pages_admins.liste_auteurs' , compact("lister_auteur"));
+        $lister_auteur=auteur::orderBY("NOM_AUTEUR","asc")->get();
+        return view("pages_admins.liste_auteurs" , compact("lister_auteur"));
+    }
+
+    public function ajoutauteur(){
+        
+        return view("pages_admins.ajout_auteur");
     }
 }

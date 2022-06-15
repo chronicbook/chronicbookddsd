@@ -24,16 +24,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
-                                            <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
-                                            <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
-                                            <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
-                                        </tr>
+                                    @foreach($lister_livres as $liste)
+                                            <tr>
+                                                <th scope="row">{{$liste->TITRE}}</th>
+                                                <td>{{$liste->auteur->NOM_AUTEUR}}</td>
+                                                <td>{{$liste->PRIX}}</td>
+                                                <td>{{$liste->NB_LIKE}}</td>
+                                                <td>{{$liste->NB_ACHAT}}</td>
+                                                <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
+                                                <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
+                                                <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
+                                            </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

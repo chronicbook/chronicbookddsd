@@ -10,6 +10,6 @@ class chapitre extends Model
     use HasFactory;
 
     public function histoire(){
-        $this->hasOne(histoire::class);
+       return  $this->belongsTo(histoire::class);
     }
 }

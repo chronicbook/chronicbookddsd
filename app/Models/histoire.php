@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class histoire extends Model
 {
     use HasFactory;
-
+    protected $table = 'histoire';
     public function histoire(){
-        $this->hasOne(auteur::class);
+        return $this->belongsTo(auteur::class);
     }
 }

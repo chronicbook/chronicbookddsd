@@ -10,7 +10,7 @@ class auteur extends Model
     use HasFactory;
     protected $table = 'auteur';
 
-    public function classe (){
-        $this->hasOne(admins::class);
+    public function admins (){
+        return $this->belongsTo(admins::class);
     }
 }

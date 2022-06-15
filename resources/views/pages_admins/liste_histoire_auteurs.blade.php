@@ -24,16 +24,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        $i=0;
+                                    @foreach($lister_histoire as $listeh)
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
+                                            <th scope="row">$i</th>
+                                            <td>{{$listeh->TITRE}}</td>
+                                            <td>{{$listeh->auteur->NOM_AUTEUR}}</td>
+                                            <td>{{$listeh->NB_L}}</td>
+                                            <td>{{$listeh->NB_V}}</td>
                                             <td><button type="button" class="btn btn-info m-2">Modifier</button></td>
                                             <td> <button type="button" class="btn btn-success m-2">Ajouter</button></td>
                                             <td><button type="button" class="btn btn-danger m-2">Suprimer</button></td>
                                         </tr>
+                                        $i++;
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

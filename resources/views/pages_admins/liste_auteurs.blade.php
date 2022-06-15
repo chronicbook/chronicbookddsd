@@ -13,7 +13,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">id</th>
                                             <th scope="col">Nom</th>
                                             <th scope="col">Prenom</th>
                                             <th scope="col">Telephone</th>
